@@ -10,6 +10,7 @@
 
 int fizz_buzz(int iUserInput){
     for(int i=0;i<iUserInput;i++){
+
     if (i%3!=0 && i%5!=0){
         printf("%i",i);
     }
@@ -28,9 +29,14 @@ int fizz_buzz(int iUserInput){
 
 int main(){
     int iUserInput = 0;
-    printf("Please enter a number for FizzBuzz: ");
 
+    printf("Please enter a number for FizzBuzz: ");
     scanf("%i", &iUserInput);
-    fizz_buzz(iUserInput);
+
+    if (iUserInput<0){
+            printf("Negative doesn't fizz buzz. ");
+    }else {
+        fizz_buzz(iUserInput);
+    }
     return 0;
 }
