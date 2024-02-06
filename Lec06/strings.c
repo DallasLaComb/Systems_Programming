@@ -16,8 +16,13 @@ int main(){
     string2[5] = 'X';
     printf("String2 = %s\n", string2);
 
-    for (int i=0;i<strlen(string2); i++){
-        printf("string[%d] = %c (%d)\n",i,string1[i],string2[i]);
+    // for (int i=0;i<strlen(string2); i++){
+    //     printf("string[%d] = %c (%d)\n",i,string1[i],string2[i]);
+    // }
+
+    for(int i=0;string2[i]!=0;i++){
+            printf("string[%d] = %c (%d)\n",i,string1[i],string2[i]);
+
     }
 
 
